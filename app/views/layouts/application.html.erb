@@ -1,14 +1,67 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <title>Bancodehoras</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Banco de horas</title>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
+<%#*<link href="stylesheet.css" rel="stylesheet" type="text/css" />%>
 </head>
 <body>
 
-<%= yield %>
+<div id="page">
+
+    <div id="top">
+		<div id="name_part_1" >BANCO de <span class="orange">H</span>ORAS</div>
+		<div id="name_part_2" ><span class="green">T</span>RABALHADAS</div>
+		<div id="square"><div id="orange_square"></div><div id="green_square"></div></div>
+    </div>
+
+
+    <div id="line"></div>
+    <div id="left_col">
+
+
+        <div class="clearboth"></div>
+
+
+
+		<!-- Menu -->
+		<ul id="menu">
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="index.html">LOGIN</a></li>
+			<li><a href="usuarios">USUÁRIOS</a></li>
+			<li><a href="index.html">TESTE</a></li>
+		</ul>
+		<!-- Menu end-->
+		<br/><br/>
+
+		<div class="news">
+			<h1>Notícias &amp; Eventos</h1>
+			<span class="bold green">28/12/2010</span><br>
+			Teste de template para o site "Banco de horas".
+                            <p> "-Gostei muito desse estilo" (comentário de Fernando).</p>
+			<a href="#" class="right">leia mais...</a>
+
+		</div>
+
+    </div>
+    <div id="right_col">
+
+	<%= yield %>
+
+    </div>
+	<!--end right_col-->
+
+    <div id="line"></div>
+    <div class="clearboth"></div>
+</div>
+<div id="copyright">
+	Copyright &copy; 2010 Herminio Torres / Fernando Lopes.
+</div>
+<br/>
+
 
 </body>
 </html>
